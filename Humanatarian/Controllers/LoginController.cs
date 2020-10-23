@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Humanatarian.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Humanatarian.Controllers
@@ -12,17 +13,17 @@ namespace Humanatarian.Controllers
     public class LoginController : ControllerBase
     {
 
-        [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+        private readonly LoginContext _loginContext;
+
+        public LoginController(LoginContext loginContext)
         {
-            var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
-            })
-            .ToArray();
+            _loginContext = loginContext;
+        }
+
+        [HttpGet]
+        public IActionResult Get(string username , string password)
+        {
+            return NotFound();
         }
     }
 }
