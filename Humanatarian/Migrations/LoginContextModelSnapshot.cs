@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Humanatarian.Migrations
 {
-    [DbContext(typeof(LoginContext))]
+    [DbContext(typeof(LoginDatabaseContext))]
     partial class LoginContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

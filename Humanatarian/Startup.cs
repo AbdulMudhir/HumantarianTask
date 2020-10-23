@@ -28,7 +28,8 @@ namespace Humanatarian
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddDbContext<LoginContext>(options => options.UseSqlServer(
+            services.AddScoped<ILoginContext, LoginContext>();
+            services.AddDbContext<LoginDatabaseContext>(options => options.UseSqlServer(
 
                 Configuration.GetConnectionString("DefaultConnection")
 

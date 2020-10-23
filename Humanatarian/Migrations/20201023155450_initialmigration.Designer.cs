@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Humanatarian.Migrations
 {
-    [DbContext(typeof(LoginContext))]
+    [DbContext(typeof(LoginDatabaseContext))]
     [Migration("20201023155450_initialmigration")]
     partial class initialmigration
     {
