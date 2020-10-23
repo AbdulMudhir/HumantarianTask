@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Abdul\\Desktop\\Humantarian\\Humanatarian\\Humanatarian\\Humanatarian.csproj",
+      "projectUniqueName": "C:\\Users\\Abdul\\Desktop\\Humantarian\\Humanatarian\\HumantarianTask\\Humanatarian\\Humanatarian.csproj",
       "projectName": "Humanatarian",
-      "projectPath": "C:\\Users\\Abdul\\Desktop\\Humantarian\\Humanatarian\\Humanatarian\\Humanatarian.csproj",
+      "projectPath": "C:\\Users\\Abdul\\Desktop\\Humantarian\\Humanatarian\\HumantarianTask\\Humanatarian\\Humanatarian.csproj",
       "packagesPath": "C:\\Users\\Abdul\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Abdul\\Desktop\\Humantarian\\Humanatarian\\Humanatarian\\obj\\",
+      "outputPath": "C:\\Users\\Abdul\\Desktop\\Humantarian\\Humanatarian\\HumantarianTask\\Humanatarian\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
