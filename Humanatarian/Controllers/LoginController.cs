@@ -21,19 +21,21 @@ namespace Humanatarian.Controllers
             _loginContext = loginContext;
         }
 
-        [HttpGet]
-        public IActionResult Get(string username, string password)
+        //api/login
+        [HttpPost]
+        public IActionResult Post([FromBody] LoginModel login)
         {
-            var login = new LoginModel() { Username = username, Password = password };
 
-
-            var credentialExist = _loginContext.IsValidLogin(login);
+            if (ModelState.IsValid)
+            {
+                
+                var credentialExist = _loginContext.IsValidLogin(login);
 
                 if (credentialExist)
                 {
                     return Ok();
                 }
-            
+            }
             return NotFound();
 
         }

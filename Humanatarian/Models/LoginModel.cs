@@ -10,7 +10,9 @@ namespace Humanatarian.Models
     {
         [Key]
         public int LoginId { get; set; }
+        [Required]
         public string Username { get; set; }
+        [Required]
         public string Password { get; set; }
     }
 }
